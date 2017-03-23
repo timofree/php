@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="es" >
+<head>
+
+</head>
+<body>
+
+<p> hola esto es un prueba sdfasdfasdf</p>
+<p> Y esto es otro Padsfasdfasdfasdf </p>
+
+<script type="text/javascript">
+ parrafos = document.getElementsByTagName('p'); // contar los parrafos de la pagina i mostrarlos
+alert(parrafos);
+
+for(i=0; i<parrafos.length; i++){
+
+	alert(parrafos[i].textContent);
+}
+var newp = document.createElement('p');
+var text = prompt("introduce el nuevo parrafo")
+
+var texto = document.createTextNode(text);
+newp.appendChild(texto);
+document.body.appendChild(newp);
+
+
+</script>
+	
+</body>
+</html>

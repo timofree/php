@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="es" >
+<head>
+<script type="text/javascript">
+var apuesta = prompt(" Introduce el dinero a apostar");
+do{
+var num = prompt(" Introduce 1 para apostar PAR ------ Introduce 0 para apostar impar");
+}while(num==1 || num == 0);
+
+var aleatorio = Math.floor(Math.random() * 37);  
+alert(aleatorio);
+
+comprobar(num);
+
+function espar(num){
+
+	if(num%2 == 0){
+
+		return true ;
+
+	}else{
+		return false;
+	}
+}
+
+
+function comprobar(num){
+	if ( espar(aleatorio) && num=1){
+		alert("has ganado");
+	}else{
+
+		alert("Perdiste wey");
+	}
+}
+
+
+</script>
+</head>
+<body>
+
+<p> hola esto es un prueba </p>
+<p> Y esto es otro P </p>
+	
+</body>
+</html>

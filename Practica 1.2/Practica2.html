@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="es" >
+<head>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<title> Pratica 2</title>
+<meta content="Jordi Gimeno Barrachina " name="author"/>
+<meta content="Ejercicio de Html y CSS3" name="description" />
+<meta content="telefonica, html, css" name="keywords" />
+
+</head>
+<body>
+<header>
+	<img src="iceweasel.png" width="40px" height="40px">
+	<h1>Ice Weasel, navegador totalmente libre basado en Mozilla Firefox.</h1>
+</header>
+<main>
+
+	<div>
+		<img src="iceweasel.png" width="130px" height="130px">
+		<br>
+		<p> El navegador libre</p>
+	</div>
+
+
+	<form method="POST" action="ejemplo.html">
+		<table>
+			<tr>
+				<th colspan="2"> Introduce tus datos </th>
+			</tr>
+			<tr>
+				<td><label for"nombre" >Nombre</label></td>
+				<td><input type="text" name="nombre" ></td>
+			<tr>
+				<td><label for="apellidos" >Apellidos</label></td>
+				<td><input type="text" name="apellidos"></td>
+			</tr>
+			<tr>
+				<td><label for="email" >Email</label></td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td><label for="tel" >Telefono</label></td>
+				<td><input type="number" name="tel"></td>
+			</tr>
+			<tr>
+				<td><label for="nav" >Que otros navegadores utilizas?</label></td>
+				<td>
+				<select size="4" multiple="" name="nav">
+					<option value="chrome">Chrome</option>
+					<option value="safari">Safari</option>
+					<option value="explorer">Explorer</option>
+					<option value="opera">Opera</option>
+
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="op">Danos tu opinio sobre IceWeasel </label></td>
+				<td><textarea name="for"> </textarea></td>
+			</tr>
+		</table>
+	</form> 
+</main>
+
+<aside>
+	<h2> Ultimas noticias</h2>
+	<p> Liberado nueva version de Debian Jessie 8.1 </p>
+	<p> Opera Browser añade nuevos elementos de HTML5 y CSS3 </p>
+</aside>
+
+<footer>
+	<a href=""> enlace 1 </a>
+	<a href=""> enlace 2 </a>
+
+</footer>
+</body>
+
+</html>

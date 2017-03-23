@@ -1,0 +1,34 @@
+table{
+    align-content: : center;
+	border: solid 1px black;
+	border-collapse: collapse;
+    border-color: white;
+}
+
+td{
+	border: solid 1px white;
+	color: white;
+	 font: 300% sans-serif;
+
+}
+td:hover{
+	background-color: yellow;
+
+}
+
+
+.rojo{
+	background: red;
+}
+.negro{
+	background: black;
+}
+
+div{
+
+	margin: 0 auto 0 auto;
+}
+body{
+
+	background: #BDBDBD;
+}

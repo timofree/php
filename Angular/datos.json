@@ -1,0 +1,27 @@
+"personas" :[
+
+    {
+        "nombre" : " Paco",
+        "edad" : " 25 ",
+    },
+     {
+        "nombre" : " Toni",
+        "edad" : " 26 ",
+    },
+     {
+        "nombre" : " Adri",
+        "edad" : " 35 ",
+    },
+     {
+        "nombre" : " Andrea",
+        "edad" : " 27 ",
+    },
+     {
+        "nombre" : " Jordi",
+        "edad" : " 63 ",
+    },
+     {
+        "nombre" : " Javi",
+        "edad" : " 87 ",
+    }
+]

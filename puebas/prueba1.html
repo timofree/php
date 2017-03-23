@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    function loadXMLDoc() {
+      var xmlhttp=new XMLHttpRequest();
+      xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+        	var agenda = JSON.parse(xmlhttp.response);
+        	alert(xmlhttp.response);
+
+            // document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+        }
+      }
+      xmlhttp.open("GET","http://datos.gob.es/apidata/catalog/dataset/format/json?_sort=title&_pageSize=10&_page=0",true);
+      xmlhttp.send();
+    }
+  </script>
+</head>
+<body>
+  <div id="myDiv"><h2>Let AJAX change this text</h2></div>
+  <button type="button" onclick="loadXMLDoc()">Change Content</button>
+</body>
+</html>

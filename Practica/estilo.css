@@ -1,0 +1,32 @@
+    table,th{
+       
+		border: solid 1px black;
+		border-spacing: 0pc;
+		border-collapse: collapse;
+	}
+
+	footer{
+		text-align: center;
+		clear: both;
+
+	}
+	aside{
+		float: right;
+		width: 180px;
+	}
+	main{
+		float: left;}
+
+
+  header {
+    background: linear-gradient(aqua, grey);
+}
+
+body{
+	background-color: grey;
+}
+h1{
+	margin: 0;
+
+}
+

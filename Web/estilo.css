@@ -1,0 +1,65 @@
+
+
+
+header{
+	background-color: green;
+}
+ul,li,header {
+	display: inline-block; 
+	margin: 16px ;
+}
+
+footer{
+	position: absolute;
+	bottom: 0px;
+	background-color: yellow;
+}
+main {
+	padding: 20px;
+	background-color: pink; 
+}
+
+
+table  tr:nth-child(even)  {
+	border: solid 1px black;
+	padding-left: 50px;
+	padding-right:  50px;
+	background-color: #2C62C7;
+	text-align: center;
+
+
+}
+table  tr:nth-child(odd)  {
+	border: solid 1px black;
+	padding-left: 50px;
+	padding-right:  50px;
+	background-color: #3FCBCD;
+	text-align: center;
+
+
+}
+
+table th {
+	border: solid 1px black;
+	padding-left: 50px;
+	padding-right:  50px;
+	background-color: orange;
+}
+
+table td {
+	border: solid 1px black;
+}
+
+
+table{
+	border: solid 1px black;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+table tr:hover {
+	background-color: yellow;
+}
+
+  
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+    <script>
+    function loadXMLDoc() {
+      var xmlhttp=new XMLHttpRequest();
+      xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+          console.log("me devulelva respuesta");
+          var agenda = JSON.parse(xmlhttp.response);
+          console.log(agenda);
+           var name = agenda.owner.name;
+           var title = agenda.owner.title;
+           var w =document.getElementById("nombre");
+           var e =document.getElementById("titulo");
+           w.setAttribute("value",name);
+           e.setAttribute("value",title);
+        }
+      }
+      xmlhttp.open("GET","firstjson2.json",true);
+      xmlhttp.send();
+    }
+
+
+   
+
+
+
+      
+ 
+  </script>
+
+</head>
+<body>
+ 
+ <input type="text" name="nombre" id="nombre"> 
+ <input type="text" name="apellido" id="titulo">
+ <button onclick="loadXMLDoc()"> pulsa</button>
+</body>
+</html>

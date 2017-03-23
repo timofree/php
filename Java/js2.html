@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="es" >
+<head>
+<script type="text/javascript">
+
+var texto = prompt("Introduce texto");
+
+if(ispalindrom(texto)){
+	alert(" es palindromo");
+ }else {
+ 	alert(" no es palindromo");
+ }
+
+function ispalindrom(text){
+	var partes = text.split("");
+	var text2 = partes.reverse();
+	var text3 = text2.join("");
+	alert(text3);
+	if(text3 == text){
+		return true;
+	}else{
+		
+		return false ;
+	}
+}
+
+
+
+
+</script>
+</head>
+<body>
+
+<p> hola esto es un prueba </p>
+<p> Y esto es otro P </p>
+	
+</body>
+</html>

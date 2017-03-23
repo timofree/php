@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		MINI RULETA
+	</title>
+    <link rel="stylesheet" href="estilo.css">
+	<script type="text/javascript">
+     var apuesta;
+	function intro(){
+		apuesta = prompt("Indica valor apostar");
+		var ale = Math.floor((Math.random() * 16) + 1);
+		number = document.getElementById(ale);
+
+		escribe(apuesta);
+	}
+		
+
+
+		function escribe (apuesta){
+			var apu = document.getElementById("info");
+					apu.innerHTML = "Tu apuesta es:  " + apuesta+"€";
+		document.body.appendChild(apu);
+		
+		texto2.innerHTML = "El numero que has apostado es : ";
+		document.body.appendChild(texto2);
+	}
+		
+
+		alert(ale);
+		var t ;
+
+         
+		function selec(){
+			var celdas =document.getElementsByTagName('td');
+	        for(i=0;i<celdas.length;i++){
+			celdas[i].addEventListener("click", selecciona);
+
+	       }
+       }
+	
+
+
+	function selecciona (event){
+	this.style.backgroundColor = 'white';
+	this.style.color = 'black';
+     t = this.id;
+     comprueba();
+    }
+
+    function avisa (event){
+    	alert("entra");
+	this.style.backgroundColor='yellow';
+	this.style.color = 'blue';
+    }
+
+
+    function comprueba(){
+    	if(t == ale){
+    		alert("has acertado el numero");
+    	}
+
+    }
+	</script>
+	
+	
+</head>
+<body>
+<div>
+<table>
+	<tr>
+		<td id="1" class=" negro" >1</td>
+		<td id="2" class=" rojo">2</td>
+		<td id="3" class=" negro">3</td>
+		<td id="4" class=" rojo"">4</td>
+	</tr>
+    <tr>
+		<td id="5" class=" rojo"">5</td>
+		<td id="6" class=" negro">6</td>
+		<td id="7" class=" negro">7</td>
+		<td id="8" class=" rojo"">8</td>
+	</tr>
+	<tr>
+		<td id="9" class=" negro">9</td>
+		<td id="10" class=" rojo"">10</td>
+		<td id="11" class=" negro">11</td>
+		<td id="12" class=" rojo"">12</td>
+	</tr>
+	<tr>
+		<td id="13" class=" rojo"">13</td>
+		<td id="14" class=" negro">14</td>
+		<td id="15"  class=" rojo"">15</td>
+		<td id="16" class=" negro">16</td>
+	</tr>
+
+</table>
+</div>
+<p id="info"></p>
+<p></p>
+<button> JUGAR </button>
+<button onclick="intro()">  Quitar apuesta! </button>
+
+
+<script type="text/javascript">
+intro();
+selec();
+</script>
+
+
+</body>
+</html>

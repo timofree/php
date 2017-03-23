@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>
+        Prueba de Angular.
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+</head>
+<body>
+<p> filtro de amigos </p>
+
+
+<form> 
+<input type="radio"  name="provincia" ng-model="provincia" value="otro"> Otros
+<input type="radio"  name="provincia" ng-model="provincia"  value="ali"> Alicante
+<input type="radio"  name="provincia" ng-model="provincia" value="cas">Castellon
+<input type="radio"  name="provincia" ng-model="provincia" value="val">Valencia
+
+<input type="text" ng-show="provincia=='otro'" >  </textarea>
+</form>
+ 
+
+
+</body>
+</html>

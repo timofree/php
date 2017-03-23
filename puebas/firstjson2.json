@@ -1,0 +1,68 @@
+{
+    "objectid" :"1",
+    "owner" : {
+       "objectid" : "1",
+       "phone" :"689758242 ",
+       "name" :"Pepe",
+       "title" :"Emduro ",
+       "age" : 98 ,
+       "address" :{
+            "objectid" :"1",
+            "street" :"C/Sequi fraga nº 6", 
+            "city" :"Catamarruc",
+            "state"  :"Babilon" 
+        }
+    },
+    "contacts": [
+        {
+           "objectid" : "1",
+           "phone" :"689758242 ",
+           "name" :"Pepe",
+           "title" :"Emduro ",
+           "age" : 98 ,
+           "address" :{
+              "objetcid" :"1",
+              "street" :"C/Sequia fraga nº 6", 
+              "city" :"turballos",
+              "state"  :"Babon"    
+            }
+        },
+
+        {
+        "objetcid" :"2",
+             "owner" : {
+                 "objectid" : "2",
+                 "phone" :"61111242 ",
+                 "name" :"Toni",
+                 "title" :"DH",
+                 "age" : 89 ,
+                 "address" :{
+                     "objetcid":"2",
+                     "street":"C/Sequia fraga nº 6", 
+                     "city":"Catamarruc",
+                     "state":"Babilon"
+                  }
+             }
+        },
+        {
+        "objetcid" :"3",
+             "owner" : {
+                 "objectid" : "2",
+                 "phone" :"61111242 ",
+                 "name" :"Toni",
+                 "title" :"DH",
+                 "age" : 89 ,
+                 "address" :{
+                     "objetcid":"2",
+                     "street":"C/Sequia fraga nº 6", 
+                     "city":"Catamarruc",
+                     "state":"Babilon"
+                  }
+             }
+        }
+    ] 
+}
+
+
+
+

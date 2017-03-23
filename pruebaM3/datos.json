@@ -1,0 +1,52 @@
+{
+  "producto2": {
+    "id": 2,
+    "nombre": "cepillo",
+    "precio": 5.01,
+    "disponible": true
+  },
+  "producto3": {
+    "id": 3,
+    "nombre": "jabon",
+    "precio": 7.01,
+    "disponible": true
+  },
+  "producto4": {
+    "id": 4,
+    "nombre": "papas",
+    "precio": 0.51,
+    "disponible": true
+  },
+  "producto5": {
+    "id": 5,
+    "precio": 899,
+    "disponible": true
+  },
+  "producto6": {
+    "id": 6,
+    "precio": 6,
+    "disponible": true
+  },
+  "producto7": {
+    "id": 7,
+    "precio": 689,
+    "disponible": true
+  },
+  "producto68": {
+    "id": 68,
+    "precio": 3,
+    "disponible": true
+  },
+  "producto10": {
+    "id": 10,
+    "nombre": "PAPAddgdg",
+    "precio": 96,
+    "disponible": true
+  },
+  "productoNaN": {
+    "id": null,
+    "nombre": "",
+    "precio": null,
+    "disponible": false
+  }
+}

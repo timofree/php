@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es" >
+<head>
+<script type="text/javascript">
+
+var texto = prompt("Introduce texto");
+
+
+texto = texto.split(" ");
+texto = texto.join("");
+texto = texto.toLowerCase();
+
+texto = quitatilde(texto);
+
+alert(texto);
+
+if(ispalindrom(texto)){
+	alert(" es palindromo");
+ }else {
+ 	alert(" no es palindromo");
+ }
+
+function ispalindrom(text){
+	var partes = text.split("");
+	var text2 = partes.reverse();
+	var text3 = text2.join("");
+	if(text3 == text){
+		return true;
+	}else{
+		
+		return false ;
+	}
+}
+
+function quitatilde(cadena){
+
+   cadena = cadena.replace(/á/gi,"a");
+   cadena = cadena.replace(/é/gi,"e");
+   cadena = cadena.replace(/í/gi,"i");
+   cadena = cadena.replace(/ó/gi,"o");
+   cadena = cadena.replace(/ú/gi,"u");
+   cadena = cadena.replace(/ñ/gi,"n");
+   cadena = cadena.replace(/à/gi,"a");
+   cadena = cadena.replace(/è/gi,"e");
+   cadena = cadena.replace(/ì/gi,"i");
+   cadena = cadena.replace(/ò/gi,"o");
+   cadena = cadena.replace(/ù/gi,"u");
+
+	alert(cadena);
+	return cadena;
+}
+
+
+
+</script>
+</head>
+<body>
+
+<p> hola esto es un prueba </p>
+<p> Y esto es otro P </p>
+	
+</body>
+</html>

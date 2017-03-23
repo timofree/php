@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es" >
+<head>
+<script type="text/javascript">
+function introlista(){
+
+	do{
+		 newli = document.createElement('li');// Crea elemnto li
+		 text = prompt("introduce un nombre para la lista") 
+		 if(text !=""){
+			texto = document.createTextNode(text);// crea un nodo texto
+			newli.appendChild(texto);// Le añade texto al elmento li creado anteriormente.
+			a = document.getElementsByTagName('ul'); // busca todos los elementos ul en el HTML y los guarda en un array.
+			a[0].appendChild(newli); // De todos los ul accedemos al primero con [0]. y le añadimos el li creado anteriormente.
+	    }
+	}while(text!="")
+}
+
+function eventos (){
+b=document.getElementsByTagName('textarea');
+
+	for(i=0;i<b.length;i++){
+
+		//b[i].onclick = function(){alert(1)};
+
+		b[i].addEventListener("click", introlista);
+
+		//b[i].attachEvent('click', function(){alert("4")});
+
+	}
+}
+
+</script>
+
+</head>
+<body>
+
+<ul>
+</ul>
+<textarea>   </textarea>
+
+
+<script type="text/javascript">
+introlista();
+eventos();
+</script>
+	
+</body>
+</html>

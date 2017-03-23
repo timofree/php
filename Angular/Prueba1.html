@@ -1,0 +1,53 @@
+<!doctype html>
+<html ng-app>
+  <head>
+  <title> Pruebas Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+      
+
+    </script>
+  </head>
+  <body>
+  <script type="text/javascript">
+   
+  </script>
+    <div>
+      <p> Filtra amigos </p>
+      <input type="text" name="nombre" ng-model="nombre"> Introduce nombre 
+
+      <ul ng-init = "gente = [
+
+            {
+                'nombre' : 'Paco',
+                'edad' : '25 '
+            },
+             {
+                'nombre' :  'Toni',
+                'edad' : ' 26 '
+            },
+             {
+                'nombre' : 'Adri',
+                'edad' : ' 35 '
+            },
+             {
+                'nombre' : 'Andrea',
+                'edad' : ' 27 '
+            },
+             {
+                'nombre' : 'Jordi',
+                'edad' : ' 63 '
+            },
+             {
+                'nombre' : 'Javi',
+                'edad' : ' 87 '
+            }
+      ] ">
+
+
+        <li ng-repeat= "a in gente | filter: nombre"> {{a.nombre}} : {{a.edad}} años</li>
+      </ul>
+      <p > {{gente.length}}</p> 
+
+    </div>
+  </body>
+</html> 

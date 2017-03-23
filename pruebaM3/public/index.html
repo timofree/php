@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script src="controler.js"></script>
+</head>
+<body ng-app = "Superapp">
+<div ng-controller = "TestController">
+  <ul>
+      <li>
+     </li>
+  </ul>
+
+   <form action="http://127.0.0.1:8081/add" method="POST" >  
+      ID: <input type="number" name="identificador">
+      <br>  
+      Nombre: <input type="text" name="nombre"> 
+      <br>  
+      Precio: <input type="number" name="precio"> 
+      <br>  
+      Disponible: <input type="checkbox" name="disponible"> <br>  
+      <input type="submit" value="Submit"> 
+
+    </form> 
+    <p> {{datos.producto[1].nombre}} </p>
+</div>
+ </body> 
+</html>

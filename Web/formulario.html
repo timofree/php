@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<title>Login usuario</title>
+</head>
+<body bgcolor="purple">
+
+<div align="center">
+	<h1> Hoja de inscripcion </h1>
+
+	<form action="formulario.html" method="POST" target="">
+ <span>Nombre</span>
+    <input  name="Nombre" value="Pepito" type="text">
+    <br>
+    <span>Constraseña</span>
+    <input type="password" name="pass" required="" size="6" minlength="8">
+
+    <br>
+    <br>
+    <p> Sexo: </p>
+
+    <input type="radio" name="genero" value="H"> <span>Hombre </span>
+    <input type="radio" name="genero" value="M"> <span>Mujer</span>
+    <br>
+    <br>
+    <span>Edad</span>
+    <input type="number" name="edad" value="25" style="size: 6" > 
+
+     <br>
+    <br>
+    <p> Provincia: </p>
+  <select type="Select" name="provincia" size="1" id="" method="POST" required="">
+      <option value="Alacant" selected="" > Alacant</option>
+      <option value="Castello"> Castello</option>
+      <option value="Valencia"> Valencia</option>
+    <br>
+    <br>
+</select>
+
+ <br>
+    <br>
+    <input type="reset" name="Borrar" value=" A tomar por culo" style="background-color: red" >
+    <input type="submit" name="Enviar" value="Validar" style="background-color: green"  > 
+    </form>
+    </div>
+</body>
+</html>

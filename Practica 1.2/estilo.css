@@ -1,0 +1,59 @@
+aside{
+	float: right;
+	width: 180px;
+}
+main{
+	float: left;
+	padding: 8px;
+
+}
+
+table, th {
+	border-spacing: 10px;
+		border: solid 1px black;
+		border-spacing: 0;
+		border-collapse: collapse;
+
+
+}
+header {
+
+	background: linear-gradient(blue,#A9BCF5);
+	padding: 8px;
+}
+
+
+
+body{
+	background-color: #A9BCF5;
+	margin: 0;
+
+
+}
+footer {
+	text-align: center;
+	clear: both;
+	padding: 8px;
+
+}
+div{
+	text-align: right;
+}
+
+
+td{
+	text-align: left;
+	padding-right: 8px;
+	padding-left:  8px;
+	
+}
+td:first-child {
+	text-align: right;
+}
+textarea{
+	width: 200px;
+	height: 100px;
+}
+th{
+	padding: 8px;
+}

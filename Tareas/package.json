@@ -1,0 +1,16 @@
+{
+  "name": "tareas",
+  "version": "1.0.0",
+  "description": "practicas de clase",
+  "main": "index.js",
+  "dependencies": {
+     "express": "~3.x",
+    "mongoose": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
